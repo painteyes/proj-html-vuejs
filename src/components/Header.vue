@@ -40,6 +40,7 @@ header{
     height: 50px;    
     width: 100%;
     position: absolute;
+    z-index: 1;
     
     .container{
         height: 100%;
