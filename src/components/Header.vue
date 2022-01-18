@@ -58,15 +58,18 @@ header{
 
         .menu {
             color: white;
+            width: 60%;
             height: 100%;
             display: flex;
             align-items: flex-end;
 
             ul {
                 display: flex;
+                width: 100%;
+                
             
                 li {
-                    margin: 0 30px;
+                    margin: auto;
                     text-transform: uppercase;
                     line-height: 50px;
 

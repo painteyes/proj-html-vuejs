@@ -1,4 +1,8 @@
 @import "./variables.scss";
+@import "~@fontsource/roboto/400.css";
+@import "~@fontsource/roboto/700.css";
+
+
 
 
 *{
@@ -9,11 +13,7 @@
     // border: 1px solid green;
 }
 
-
-body{
-    font-family: sans-serif;
-}
-
+body { font-family: "Roboto"; }
 
 img {
     max-width: 100%;
@@ -24,16 +24,28 @@ ul {
 }
 
 .container{
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
 .btn{
-    background-color: #39febe;
-    color: $brand_primary_color ;
     padding: 15px 30px;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+
+    &-bluegreen {
+        background-color: #39febe;
+        color: $brand_primary_color ;
+    }
+
+    &-red {
+        background-color: #f71e3a;
+        color: white ;
+    }
+}
+
+.bg{
+    background-color: $brand_primary_color;
 }
