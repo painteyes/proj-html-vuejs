@@ -12,9 +12,8 @@
                     <li v-for="element,index in menuItems" :key='index'>{{element}}</li>
                 </ul>
             </div>
-
         </div>
-
+        
     </header>
 </template>
 

@@ -31,9 +31,11 @@ export default {
 .title-area{
 
     text-transform: uppercase;
+    margin-bottom: 30px;
+
 
     span {
-        font-size: 17px;
+        font-size: 15px;
         color: #c2c2c9;
     }
 
@@ -49,7 +51,7 @@ export default {
     h3{
         color: white;
         font-weight: bold ;
-        margin: 25px 0;
+        margin-top: 20px;
     }
 }
 

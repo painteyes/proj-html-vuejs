@@ -44,8 +44,15 @@ ul {
         background-color: #f71e3a;
         color: white ;
     }
+
+    &-dark {
+        background-color: #201e38;
+        color: white ;
+    }
+
+
 }
 
-.bg{
+.bg-color{
     background-color: $brand_primary_color;
 }
