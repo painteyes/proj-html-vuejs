@@ -16,8 +16,11 @@
             </div>
 
             <div class="buttons">
-                <a class="btn btn-bluegreen" href="#">Read more </a>
-                <i id='play' class="fas fa-play"></i>
+                <a id='read-more' class="btn btn-bluegreen" href="#">Read more </a>
+                <a id='play' href="#">
+                    <i class="fas fa-play"></i>
+                </a>
+                
             </div>
         </div>
         
@@ -29,7 +32,7 @@
 
         <div class="wrapper">
 
-            <div class="title">
+            <div class="title-area">
                 <h3>Our consultant can help you</h3>
                 <div class="line"></div>
             </div>
@@ -79,151 +82,230 @@
         </div>
     </section>
 
-    <div class="bg-color">
+    <section class="about-us">
 
-        <section class="about-us">
+        <img :src="require('../assets/images/business-people-working-together-on-project-and-5FHSKBL.jpg')" alt="">
 
-            <img :src="require('../assets/images/business-people-working-together-on-project-and-5FHSKBL.jpg')" alt="">
+        <div class="wrapper">
+
+            <TitleArea 
+            :sectionName="'About us'" 
+            :sectionTitle="'We make your strategy work'" 
+            :titleSize="'font-size:50px;'"
+            />
+
+            <p>When, while lovely valley teems vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex sint facilis animi expedita eius fuga perferendis fugiat quo vel cumque magni, quis vero molestiae veritatis sapiente quaerat ipsam. Perferendis!</p> 
+        </div>
+    </section>
+
+    <section class="get-started">
+        <h5>We Help to deliver the business case</h5>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatem sapiente quaerat, inventore nesciunt vel esse! Vitae itaque odit iure ipsa.</p>
+        <a class="btn btn-red" href="#">Get Started</a>
+    </section>
+
+    <section class="project">
+
+        <div class="container">
 
             <div class="wrapper">
 
                 <TitleArea 
-                :sectionName="'About us'" 
-                :sectionTitle="'We make your strategy work'" 
-                :titleSize="'font-size:50px;'"
+                :sectionName="'Project'" 
+                :sectionTitle="'Our expert trusted consultants help clients'" 
+                :titleSize="'font-size:30px;'"
                 />
 
-                <p>When, while lovely valley teems vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex sint facilis animi expedita eius fuga perferendis fugiat quo vel cumque magni, quis vero molestiae veritatis sapiente quaerat ipsam. Perferendis!</p> 
             </div>
-        </section>
 
-        <section class="get-started">
-            <h5>We Help to deliver the business case</h5>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatem sapiente quaerat, inventore nesciunt vel esse! Vitae itaque odit iure ipsa, nulla autem aliquid enim distinctio blanditiis voluptas, ratione molestiae?</p>
-            <a class="btn btn-red" href="#">Get Started</a>
-        </section>
+            <div class="previews">
 
-        <section class="project">
-
-            <div class="container">
-
-                <div class="wrapper">
-
-                    <TitleArea 
-                    :sectionName="'Project'" 
-                    :sectionTitle="'Our expert trusted consultants help clients'" 
-                    :titleSize="'font-size:30px;'"
-                    />
-
-                </div>
-
-                <div class="previews">
+                <div class="client">
                     <img :src="require('../assets/images/DRY-1-790x592.jpg')" alt="">
+                    <div class="overlay">
+
+                        <div class="client-name">
+                            Purinky Products 
+                            <br>
+                            <span>uncategorized</span> 
+                        </div>
+
+                        <i class="fas fa-plus-square"></i>
+                    </div>
+                </div>
+
+                <div class="client">
                     <img :src="require('../assets/images/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg')" alt="">
+                    <div class="overlay">
+
+                        <div class="client-name">
+                            Purinky Products 
+                            <br>
+                            <span>uncategorized</span> 
+                        </div>
+
+                        <i class="fas fa-plus-square"></i>
+                    </div>
+                </div>
+
+                <div class="client">
                     <img :src="require('../assets/images/z1el4c4p-790x592.jpg')" alt="">
+                    <div class="overlay">
+
+                        <div class="client-name">
+                            Purinky Products 
+                            <br>
+                            <span>uncategorized</span> 
+                        </div>
+
+                        <i class="fas fa-plus-square"></i>
+                    </div>
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="testimonial">
+    <section class="testimonial">
 
-            <div class="container">
+        <div class="container">
 
-                <div class="wrapper">
+            <div class="wrapper">
 
-                    <div class="section-name">Testimonial</div>
-
-                    <TitleArea 
-                        :sectionName="''" 
-                        :sectionTitle="'What\'s the customers say about our work'" 
-                        :titleSize="'font-size:30px;'"
-                    />
-
-                </div>
-            </div>
-
-            <div class="references">
-
-                <div class="text-area">
-                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut mollitia, quibusdam at sapiente soluta id exercitationem error consequuntur laboriosam perferendis tenetur provident, enim ratione commodi necessitatibus omnis maiores repellendus!</p>
-                    <span class="person-name"> Vera Duncan</span> 
-                    <br> 
-                    <span class="company-name">Amazon Inc.</span>
-                </div>
-
-                <div class="text-area">
-                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut mollitia, quibusdam at sapiente soluta id exercitationem error consequuntur laboriosam perferendis tenetur provident, enim ratione commodi necessitatibus omnis maiores repellendus!</p>
-                    <span class="person-name"> Vera Duncan</span> 
-                    <br> 
-                    <span class="company-name">Amazon Inc.</span>
-                </div>
-
-                <div class="text-area">
-                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut mollitia, quibusdam at sapiente soluta id exercitationem error consequuntur laboriosam perferendis tenetur provident, enim ratione commodi necessitatibus omnis maiores repellendus!</p>
-                    <span class="person-name"> Vera Duncan</span> 
-                    <br> 
-                    <span class="company-name">Amazon Inc.</span>
-                </div>            
-            </div>
-        </section>
-
-        <section class="blog">
-
-            <div class="container">
+                <div class="section-name">Testimonial</div>
 
                 <TitleArea 
-                    :sectionName="'Blog'" 
-                    :sectionTitle="'The recent news you must read it'" 
+                    :sectionName="''" 
+                    :sectionTitle="'What\'s the customers say about our work'" 
                     :titleSize="'font-size:30px;'"
                 />
 
-                <div class="previews">
+            </div>
+        </div>
 
-                    <div class="article">
+        <div class="references">
 
-                        <img :src="require('../assets/images/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg')" alt="">
-                        
-                        <!-- <div class="text-area">
-                            
-                        </div> -->
-                    </div>
+            <div class="customer">
 
-                    <div class="article">
+                <div class="overlay">
+                    <img :src="require('../assets/images/oliver-ragfelt-488196-2.jpg')" alt="">
+                </div>
 
-                        <img :src="require('../assets/images/business-people-working-together-on-project-and-5FHSKBL-1390.jpg')" alt="">
-                        
-                        <!-- <div class="text-area">
-                            
-                        </div> -->
-                    </div>
+                <div class=" text-area">
+                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut mollitia, quibusdam at sapiente soluta id exercitationem error consequuntur laboriosam perferendis tenetur provident, enim ratione commodi necessitatibus omnis maiores repellendus!</p>
+                    <span class="person-name"> Vera Duncan</span> 
+                    <br> 
+                    <span class="company-name">Amazon Inc.</span>
+                </div>
+
+            </div>
+
+            <div class="customer">
+
+                <div class="overlay">
+                    <img :src="require('../assets/images/oliver-ragfelt-488196-2.jpg')" alt="">
+                </div>
+
+                <div class=" text-area">
+                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut mollitia, quibusdam at sapiente soluta id exercitationem error consequuntur laboriosam perferendis tenetur provident, enim ratione commodi necessitatibus omnis maiores repellendus!</p>
+                    <span class="person-name"> Vera Duncan</span> 
+                    <br> 
+                    <span class="company-name">Amazon Inc.</span>
+                </div>
+
+            </div>
+
+            <div class="customer">
+
+                <div class="overlay">
+                    <img :src="require('../assets/images/oliver-ragfelt-488196-2.jpg')" alt="">
+                </div>
+
+                <div class=" text-area">
+                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut mollitia, quibusdam at sapiente soluta id exercitationem error consequuntur laboriosam perferendis tenetur provident, enim ratione commodi necessitatibus omnis maiores repellendus!</p>
+                    <span class="person-name"> Vera Duncan</span> 
+                    <br> 
+                    <span class="company-name">Amazon Inc.</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="blog">
+
+        <div class="container">
+
+            <TitleArea 
+                :sectionName="'Blog'" 
+                :sectionTitle="'The recent news you must read it'" 
+                :titleSize="'font-size:30px;'"
+            />
+
+            <div class="previews">
+
+                <div class="article">
+
+                    <img :src="require('../assets/images/startup-business-people-and-strategy-board-PAJ3P9K-1390x1042.jpg')" alt="">
                     
+                    <div class="content">
+
+                        <div class="date">
+                            <span>July 4, 2019</span>
+                            <span>by Paul</span>
+                        </div>
+
+                        <div class="title">
+                            Canadian Consulting Firm acquired by UK Giant
+                        </div>
+
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt amet eligendi sunt aliquid corporis, ad a enim possimus ...
+                        </div>
+                    </div>
                 </div>
 
+                <div class="article">
+
+                    <img :src="require('../assets/images/business-people-working-together-on-project-and-5FHSKBL-1390.jpg')" alt="">
+                    
+                    <div class="content">
+
+                        <div class="date">
+                            <span>July 4, 2019</span>
+                            <span>by Paul</span>
+                        </div>
+
+                        <div class="title">
+                            Canadian Consulting Firm acquired by UK Giant
+                        </div>
+
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse incidunt amet eligendi sunt aliquid corporis, ad a enim possimus ...
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section class="contact">
 
-        <section class="contact">
+        <img :src="require('../assets/images/business-people-working-together-on-project-and-B3MZ4TX.jpg')" alt="">
+        
+        <div class="content">
 
-            <img :src="require('../assets/images/business-people-working-together-on-project-and-B3MZ4TX.jpg')" alt="">
+            <h4>Let's talk about work</h4>
+            <span>A wonderful serenity has taken possession far far away, behind the word mountains.</span>
             
-            <div class="text-content">
-
-                <div class="wrapper">
-                    <h4>Let's talk about work</h4>
-                    <span>A wonderful serenity has taken possession far far away, behind the word mountains.</span>
-                </div>
-
-                <div class="button">
-                    <a class="btn btn-dark" href="#">Get started</a>
-                </div>
-
+            <div class="button">
+                <a class="btn btn-dark" href="#">Get started</a>
             </div>
 
-        </section>
+        </div>
 
-    </div>
-
+    </section>
 
 </main>    
 </template>
@@ -253,13 +335,10 @@ export default {
 
 
 .jumbotron {
- 
     height: 900px;
     background-color: $brand_primary_color ;
-
     display: flex;
     align-items: center;
-
     position: relative;
     
     .container{
@@ -269,23 +348,32 @@ export default {
             width: 50%;        
         }
 
-        .buttons {
-                
+        .buttons {      
             display: flex;
             align-items: center;
 
+            #read-more:hover{
+                background-color: #f71e3a;
+                color: white ;
+            }
+
             #play{
+                width: 45px;
+                height: 45px;
                 font-size: 10px ;
                 margin-left: 25px ;    
                 color: #39febe;
-                width: 45px;
-                height: 45px;
                 border: 2px solid white;
                 border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;  
-                cursor: pointer;     
+                cursor: pointer; 
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }   
             }
         }
     }
@@ -293,30 +381,25 @@ export default {
     img{
         width: 65%;
         height: 100%;
-
         position: absolute;
         right: 0;
         top: 0;
-        
         object-fit:cover;
         object-position:top ;
     }
 }
 
 .services {
-    margin: 80px 0;
-    background-color: white;
+    padding: 100px 0;
+    background-color: #FFFFFF;
     color: black;
-
     position: relative;
 
     .wrapper{
+        width: 85%;
+        margin-left: auto;
 
-        width: 70%;
-        margin: auto;
-
-        .title{
-
+        .title-area{
             display: flex;
 
             h3{
@@ -324,32 +407,23 @@ export default {
                 display: inline-block;
                 text-transform: uppercase;
                 font-size: 25px;
-                margin-bottom: 70px ;
             }
 
             .line{
                 width: 100%;
-                border-top: 3px solid #39febe;
+                border-top: 3px solid #39ffbf;
                 margin-top: 15px;  
-            }
-
-            &::after {                
-                display: inline-block;
-                content: "";
-                border-top: 3px solid #39febe;
-                position: absolute; 
-                right: 0;
-                left: 85%; 
-                margin-top: 15px;       
             }
         }
 
         ul{ 
+            margin-top: 100px;
             display: flex;
             flex-wrap: wrap;
-            
+            justify-content: space-between;
+
             li{
-                width: calc((100% /2) );
+                width: calc((100% / 2) - 20px);
                 margin-bottom: 60px; 
                 display: flex; 
 
@@ -368,6 +442,7 @@ export default {
                 .text-area {
                     width: calc((100% - 50px) - 30px);
                     margin-left: 30px;
+                    cursor: pointer;
 
                     h4 {
                         font-size: 20px;
@@ -376,7 +451,7 @@ export default {
                     }
 
                     p {
-                        color: #1f1e38b3;
+                        color: #888888;
                         font-size: small;
                         width: 50%;
                     }
@@ -388,7 +463,7 @@ export default {
 
 .about-us {
 
-    height: 500px;
+    height: 550px;
     display: flex;
     align-items: center;
 
@@ -400,11 +475,11 @@ export default {
     }
 
     .wrapper{
-        width: 27%;
+        width: 30%;
         margin: 0 70px;
 
         p {
-            color: #8a8999;
+            color: #aaaaaa;
         }
     }
 }
@@ -413,13 +488,10 @@ export default {
 
     @include side-container;
 
-    height: 200px;
-    background-color: #39febe;
-
+    height: 220px;
+    background-color: #39ffbf;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
     position: relative;
   
     .btn{
@@ -431,18 +503,22 @@ export default {
     p {
         font-size: small;
         width: 25%;
+        width: calc(100% / 2);
+        padding-right: 25%;
+        color: #444444;
     }
 
     h5{
-        width: 20%;
+        padding: 0 13%;
         font-size: 30px;
         text-transform: uppercase;
         text-align: center;
+        width: calc(100% / 2);
+
     }
 }
 
 .project {
-
     margin: 130px 0;
 
     .wrapper{
@@ -450,29 +526,79 @@ export default {
     }
 
     .previews {
-
         width: 100%;
 
-        img{
+        .client{
+            display: inline-block;
             width: calc((100% / 3) - 30px);
             margin: 0 15px;
+            position: relative;
+
+            img{
+                display: block;
+            }
         }
 
-        :first-child {
-            margin-left: 0;
+        .client:first-child {
+            margin-left: auto;
             margin-right: 30px;
         }
 
-        :last-child {
-            margin-right: 0;
+        .client:last-child {
+            margin-right: auto;
             margin-left: 30px;
+        }
+    }
 
+    .overlay{
+        display: none;
+
+        .client-name{
+            color: white;
+            font-size: 20px;
+            font-weight: bold ;
+
+            span{
+               color: #c2c2c9; 
+                font-weight: lighter ;
+                font-size: smaller;
+            }  
+        }
+
+        i{
+            font-size: 45px;
+        }
+
+        *{
+            display: none;
+        }
+
+        &:hover{
+            *{
+                display: block;
+            }
+        }
+    }
+
+    .client:hover{
+
+        .overlay {
+            display: flex;    
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 20px;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($brand_secondary_color, 0.8);
+            cursor: pointer; 
         }
     }
 } 
 
 .testimonial {
-
     position: relative;
 
     .section-name {
@@ -480,7 +606,7 @@ export default {
         text-transform: uppercase;
         left: 50%;
         transform: translate(-50%);
-        color: #c2c2c9;
+        color: #AAAAAA;
         position: absolute;
     }
               
@@ -489,49 +615,96 @@ export default {
         text-align: right;
         margin-left: auto;
         margin-bottom: 30px
-
     }
 
     .references {
 
         @include side-container;
-
-        background-color: white;
+        height: 300px;
+        background-color: #FFFFFF;
         margin-left: auto;
         margin-top: 35px;
 
         display: flex;
 
-        .text-area {
-
+        .customer {
+            position: relative;
             width: calc(100% / 3);
-            padding: 35px 50px;
+            
+            .overlay{
+                height: 100%;
+                opacity: 0;
 
-            .content {
-                font-size: 14px;
-                color: #c2c2c9;
-                margin-bottom: 30px;
-
+                img {
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    object-fit: cover;                    
+                }
             }
 
-            .person-name{
-                color: black;
-                font-weight: bold ;
+            .text-area {
+                display: block;    
+                position: absolute; 
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                cursor: pointer; 
+                z-index: 0;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                
+                padding: 50px;
+
+                .content {
+                    font-size: 14px;
+                    color: #888888;
+                    margin-bottom: 30px;
+                }
+
+                .person-name{
+                    color: black;
+                    font-weight: bold ;
+                }
+
+                .company-name{
+                    color: #888888;
+                    font-size: small;
+                } 
             }
 
-            .company-name{
-                color: #c2c2c9;
-                font-size: small;
+            &:hover{
+
+                .overlay {
+                    opacity: 1;
+                }
+                
+                .text-area .person-name{
+                    color: white;
+                }
+
+                .text-area .content,
+                .text-area .company-name{
+                    color: #aaaaaa;
+                }
             }
-
-
-            
-            
-
-            
         }
-
     }
+
+    
+
+    
+
+
+    
+
+
+    
+    
 
 
 
@@ -547,42 +720,94 @@ export default {
 
         .article{
             width: calc((100% / 2) - 20px);
-            margin: 0 10px; 
+            margin: 0 10px;
+            position: relative;
+            cursor: pointer; 
+
+            
+            .content{
+                background-color: #FFFF;
+                width: 80%;
+                margin-left: auto ;
+                margin-top: -50px ;
+                position: absolute;
+                right: 0;
+                bottom: -60px;
+                z-index: 1;
+                padding: 50px;
+
+                .date{
+                    color: $brand_secondary_color;
+                    margin-bottom: 10px ;
+
+                    span{
+                        margin-right: 15px ;
+                    }
+                }
+
+                .title{
+                    font-size: 26px ;
+                    margin-bottom: 20px;
+                }
+
+                .text{
+                    color: #888888;
+                }                
+            }
+
+            // &:hover::after{
+            //     content: "";
+            //     position: absolute; 
+            //     top: 0;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     background-color: rgba($brand_secondary_color, 0.5);
+            // }
         }
 
-        :first-child {
+        .article:first-child {
             margin-left: 0;
-            margin-right: auto;
+            margin-right: 20px;
         }
 
-        :last-child {
+        .article:last-child {
             margin-right: 0;
-            margin-left: auto;
+            margin-left: 20px;
 
         }
     }
 }
 
 .contact {
-
     position: relative;
 
-    .text-content{
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .content{
         color: white;
-
         text-align: center;
-
         position: absolute;
         left: 50%;
         top:50%;
         transform: translate(-50%,-50%);
+        margin: auto;
 
-        .wrapper {
+        h4{
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        span{
+            display: inline-block;
             width: 60%;
-            margin: auto;
+            margin-bottom: 25px;
         }
     }
-
 }
 
 </style>

@@ -1,15 +1,16 @@
 <template>
-    <footer class="bg-color">
+
+    <section>
 
         <div class="container">
 
-            <section> 
+            <footer> 
 
                 <div class="logo">
                     <img :src="require('../assets/images/logotype-2-150x25.png')" alt="">
                 </div>
 
-                <div class="menu">
+                <div class="list-menu">
                     <ul>
                         <li v-for="element,index in menuItems" :key='index'>{{element}}</li>
                     </ul>
@@ -22,23 +23,39 @@
                     <i class="fab fa-twitter"></i>
                 </div>
 
+            </footer>
 
-
-            </section>
-
+            <hr>
             
-
             <div class="copyright">
-                <span>Terms of use</span>
-                <br>
-                <span>Privacy Environmental Policy</span>
+
+                <div class="col-left">
+                    <span>Terms of use</span>
+                    <br>
+                    <span>Privacy Environmental Policy</span>
+                </div>
+
+                <div class="col-right">
+                    <span>Copyright 2020 Phlox Consulting. All rights Reserved.</span>
+                </div>
+ 
             </div>
-
-
         </div>
 
-        
-    </footer>
+        <div class="support">
+
+            <div class="back-to-top">
+                <i class="fas fa-arrow-circle-up"></i>
+            </div>
+
+            <div class="chat">
+                <i class="fas fa-comment-dots"></i>
+            </div>
+    
+        </div>
+
+    </section>
+    
 </template>
 
 
@@ -58,82 +75,81 @@ export default {
 
 @import "../styles/general.scss";
 
+section{
+    position: relative;
 
-
-.container {
-
-    section{
+    footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         padding: 70px 0;
 
-    }
-
-    .menu {
-        color: #6e6d7e;
-        width: 60%;
-        height: 100%;
-        display: flex;
-        
-        // align-items: flex-end;
-
-        // .logo {
-        //     width: 100px;
-
-        //     img{
-        //         display: block;
-        //     }
-        // }
-
-        ul {
+        .list-menu {
+            width: 60%;
+            height: 100%;
             display: flex;
-            justify-content: center;
-            width: 100%;
-        
-            li {
-                margin: 0 15px;
-                text-transform: uppercase;
-                line-height: 50px;
 
-                &:hover {
-                    cursor: pointer;
+            ul {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            
+                li {
+                    margin: 0 15px;
+                    line-height: 50px;
+                }
+
+                :first-child {
+                    margin-left: 0;
+                }
+
+                :last-child {
+                    margin-right: 0;
                 }
             }
+        }
 
-            :first-child {
-                margin-left: 0;
-            }
+        .social-icons{
+            color: white;
+            i{ margin: 10px;}
+        }   
+    }
 
-            :last-child {
-                margin-right: 0;
-            }
+    .copyright {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: #aaaaaa;
+        padding: 20px 0;
+
+        span{
+            font-size: small;
         }
     }
 
+    .support{
 
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
 
+        >*{
+            margin-right: 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
 
-    .social-icons{
-        color: white;
+        .back-to-top{
+            color: #aaaaaa ;
+            font-size: 30px;
+        }
 
-        i{ margin: 10px;}
-        
+        .chat{
+            color: #527ceb;
+            font-size: 50px;
+        }
     }
-
-
-//     .section::after {                
-//         display: inline-block;
-//         content: "";
-//         border-top: 3px solid #6e6d7e;
-//         width: 100%;
-//         // display: block;
-//         // position: absolute; 
-//         // right: 0;
-//         // left: 85%; 
-//         // margin-top: 15px;       
-//     }
 }
 
 </style>

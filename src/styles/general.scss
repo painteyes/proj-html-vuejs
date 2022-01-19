@@ -3,8 +3,6 @@
 @import "~@fontsource/roboto/700.css";
 
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -13,10 +11,14 @@
     // border: 1px solid green;
 }
 
-body { font-family: "Roboto"; }
+body { 
+    font-family: "Roboto";
+    background-color: $brand_primary_color;
+}
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 ul {
@@ -29,19 +31,19 @@ ul {
 }
 
 .btn{
-    padding: 15px 30px;
+    padding: 20px 50px;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
 
     &-bluegreen {
-        background-color: #39febe;
+        background-color: #35ffbf;
         color: $brand_primary_color ;
     }
 
     &-red {
-        background-color: #f71e3a;
+        background-color: #f00e2e;
         color: white ;
     }
 
@@ -49,10 +51,21 @@ ul {
         background-color: #201e38;
         color: white ;
     }
-
-
 }
 
-.bg-color{
-    background-color: $brand_primary_color;
+
+.list-menu{
+    font-size: 14px ;
+    color: #cfcfcf;
+    text-transform: uppercase;
+
+    li:hover{
+        cursor: pointer;
+        color: white;
+
+    }
+}
+
+.logo{
+    cursor: pointer;
 }

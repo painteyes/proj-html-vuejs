@@ -36,13 +36,13 @@ export default {
 
     span {
         font-size: 15px;
-        color: #c2c2c9;
+        color: #aaaaaa;
     }
 
     span::before{
         display: inline-block;
         content: "";
-        border-top: 3px solid #39febe;
+        border-top: 3px solid #39ffbf;
         width: 40px;
         margin-right: 15px ;
         height: 5px;         
