@@ -66,8 +66,7 @@ header{
 
     .container{
         display: flex;
-        align-items: flex-start;
-        padding-top: 20px;
+        align-items: center;
 
         .logo {
             width: 100px;
@@ -124,18 +123,22 @@ header{
             }
         }
     }
-}
 
+    @media screen and (max-width: 920px) {
 
-@media screen and (max-width: 920px) {
+        .container{
+            align-items: flex-start;
+            padding-top: 20px;
+        }
 
-    .list-menu .item{
-        display: none;
-    }
+        .list-menu .item{
+            display: none;
+        }
 
-    #menu-icon {
-        display: inline-block;
-    }
+        #menu-icon {
+            display: inline-block;
+        }
+    }   
 }
 
 </style>
